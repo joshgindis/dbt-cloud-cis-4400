@@ -1,4 +1,4 @@
-WITH location_columns AS (
+WITH notice_of_violation_columns AS (
     SELECT DISTINCT
         notice_of_violation_type AS Notice_of_Violation_Type,
         notice_of_violation_description AS Notice_of_Violation_Description

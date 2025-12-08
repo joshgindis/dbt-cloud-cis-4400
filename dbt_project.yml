@@ -1,7 +1,6 @@
-name: cis-4400-project-480001
-version: 1.0.0
+name: CIS4400_Project
 profile: Bigquery
 
 models:
-  cis-4400-project-480001:
+  CIS4400_Project:
     +materialized: table

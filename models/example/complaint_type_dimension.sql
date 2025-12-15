@@ -1,7 +1,7 @@
 WITH complaint_type_columns AS (
     SELECT DISTINCT
         complaint_type AS Complaint_Type,
-        complaintdescription AS Complaint_Description
+        descriptor AS Complaint_Description
     FROM {{ ref('raw_311_complaints') }}
 )
 

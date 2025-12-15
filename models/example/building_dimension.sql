@@ -4,7 +4,6 @@ WITH building_columns AS (
         registrationid AS RegistrationID,
         boroid AS Boro_ID,
         boro AS Borough,
-        city AS City,
         housenumber AS House_Number,
         lowhousenumber AS Low_House_Number,
         highhousenumber AS High_House_Number,

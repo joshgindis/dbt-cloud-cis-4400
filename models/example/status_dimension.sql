@@ -1,6 +1,6 @@
 WITH status_columns AS (
     SELECT DISTINCT
-        current_status_ID AS Current_Status_ID,
+        currentstatus AS Current_Status_ID,
         current_status AS Current_Status,
         current_status_date AS Current_Status_Date
     FROM {{ ref('raw_housing_code_violations') }}

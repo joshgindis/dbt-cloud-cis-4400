@@ -1,7 +1,7 @@
 WITH agency_columns AS (
     SELECT DISTINCT
         agency AS Agency,
-        agencyname AS Agency_Name
+        agency_name AS Agency_Name
     FROM {{ ref('raw_311_complaints') }}
 )
 

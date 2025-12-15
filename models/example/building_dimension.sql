@@ -3,7 +3,7 @@ WITH building_columns AS (
         buildingid AS Building_ID,
         registrationid AS RegistrationID,
         boroid AS Boro_ID,
-        borough AS Borough,
+        boro AS Borough,
         city AS City,
         housenumber AS House_Number,
         lowhousenumber AS Low_House_Number,

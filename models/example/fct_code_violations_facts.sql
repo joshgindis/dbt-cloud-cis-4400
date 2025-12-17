@@ -62,9 +62,8 @@ INNER JOIN location_dimension ld
     AND v.censustract = ld.Census_Tract
 
 INNER JOIN status_dimension sd
-    ON v.current_status_id = sd.Current_Status_ID
-   AND v.current_status = sd.Current_Status
-   AND v.current_status_date = sd.Current_Status_Date
+   AND v.currentstatus = sd.Current_Status
+   AND v.currentstatusdate = sd.Current_Status_Date
 
 INNER JOIN nov_dimension nd
     ON v.notice_of_violation_description = nd.Notice_of_Violation_Description

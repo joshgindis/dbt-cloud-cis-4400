@@ -4,7 +4,6 @@ WITH location_columns AS (
         zip AS Incident_Zip,
         streetname AS Street_Name,
         apartment AS Apartment,
-        cross_street_2 AS Cross_Street_2,
         communityboard AS Community_Board,
         councildistrict AS Council_District,
         censustract AS Census_Tract

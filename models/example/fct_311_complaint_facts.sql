@@ -43,7 +43,7 @@ INNER JOIN agency_dimension ad
 
 INNER JOIN complaint_type_dimension ctd
     ON ac.complaint_type = ctd.Complaint_Type
-   AND ac.complaint_description = ctd.Complaint_Description
+   AND ac.descriptor = ctd.Complaint_Description
 
 INNER JOIN location_dimension ld
     ON ac.borough = ld.Borough

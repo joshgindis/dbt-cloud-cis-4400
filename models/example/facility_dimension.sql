@@ -1,8 +1,8 @@
 WITH facility_columns AS (
     SELECT DISTINCT
-        facilitytype AS Facility_Type,
-        parkfacilityname AS Park_Facility_Name,
-        parkborough AS Park_Borough,
+        facility_type AS Facility_Type,
+        park_facility_name AS Park_Facility_Name,
+        park_borough AS Park_Borough,
         landmark AS Landmark
     FROM {{ ref('raw_311_complaints') }}
 )

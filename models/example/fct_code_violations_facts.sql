@@ -36,8 +36,7 @@ INNER JOIN building_dimension bd
     ON v.buildingid = bd.Building_ID
    AND v.registrationid = bd.RegistrationID
    AND v.boroid = bd.Boro_ID
-   AND v.borough = bd.Borough
-   AND v.city = bd.City
+   AND v.boro = bd.Borough
    AND v.housenumber = bd.House_Number
    AND v.lowhousenumber = bd.Low_House_Number
    AND v.highhousenumber = bd.High_House_Number

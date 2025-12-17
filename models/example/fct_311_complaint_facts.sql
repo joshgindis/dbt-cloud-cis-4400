@@ -46,17 +46,12 @@ INNER JOIN complaint_type_dimension ctd
    AND ac.descriptor = ctd.Complaint_Description
 
 INNER JOIN location_dimension ld
-    ON ac.borough = ld.Borough
-   AND ac.city = ld.City
-   AND ac.incident_zip = ld.Incident_Zip
-   AND ac.address_type = ld.Address_Type
-   AND ac.location_type = ld.Location_Type
-   AND ac.street_name = ld.Street_Name
-   AND ac.cross_street_1 = ld.Cross_Street_1
-   AND ac.cross_street_2 = ld.Cross_Street_2
-   AND ac.community_board = ld.Community_Board
-   AND ac.council_district = ld.Council_District
-   AND ac.census_tract = ld.Census_Tract
+    ON ac.boro = ld.Borough
+   AND ac.zip = ld.Incident_Zip
+   AND ac.streetname = ld.Street_Name
+   AND ac.communityboard = ld.Community_Board
+   AND ac.councildistrict = ld.Council_District
+   AND ac.censustract = ld.Census_Tract
 
 INNER JOIN facility_dimension fd
     ON ac.facility_type = fd.Facility_Type

@@ -66,8 +66,9 @@ INNER JOIN status_dimension sd
    AND v.currentstatusdate = sd.Current_Status_Date
 
 INNER JOIN nov_dimension nd
-    ON v.notice_of_violation_description = nd.Notice_of_Violation_Description
-   AND v.notice_of_violation_type = nd.Notice_of_Violation_Type
-
+    ON v.novtype = nd.Notice_of_Violation_Type
+   AND v.novdescrption = nd.Notice_of_Violation_Description
+   AND v.novissuedate = nd.Notice_of_Violation_Issue_Date
+        
 INNER JOIN date_dimension dd
     ON DATE(v.inspection_date) = dd.Full_Date

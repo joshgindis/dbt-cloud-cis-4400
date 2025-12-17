@@ -1,16 +1,13 @@
 WITH location_columns AS (
     SELECT DISTINCT
-        borough AS Borough,
-        city AS City,
-        incident_zip AS Incident_Zip,
-        address_type AS Address_Type,
-        location_type AS Location_Type,
-        street_name AS Street_Name,
-        cross_street_1 AS Cross_Street_1,
+        boro AS Borough,
+        zip AS Incident_Zip,
+        streetname AS Street_Name,
+        apartment AS Apartment,
         cross_street_2 AS Cross_Street_2,
-        community_board AS Community_Board,
-        council_district AS Council_District,
-        census_tract AS Census_Tract
+        communityboard AS Community_Board,
+        councildistrict AS Council_District,
+        censustract AS Census_Tract
     FROM {{ ref('raw_housing_code_violations') }}
 )
 

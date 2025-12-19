@@ -49,7 +49,6 @@ INNER JOIN location_dimension ld
     ON ac.borough = ld.Borough
    AND ac.incident_zip = ld.Incident_Zip
    AND ac.street_name = ld.Street_Name
-   AND ac.community_board = ld.Community_Board
 
 INNER JOIN facility_dimension fd
     ON ac.facility_type = fd.Facility_Type

@@ -4,7 +4,6 @@ WITH location_columns AS (
         zip AS Incident_Zip,
         streetname AS Street_Name,
         apartment AS Apartment,
-        CAST(communityboard AS STRING) AS Community_Board,
         councildistrict AS Council_District,
         censustract AS Census_Tract
     FROM {{ ref('raw_housing_code_violations') }}

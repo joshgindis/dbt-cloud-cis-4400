@@ -42,7 +42,7 @@ INNER JOIN building_dimension bd
    AND v.highhousenumber = bd.High_House_Number
    AND v.streetname = bd.Street_Name
    AND v.streetcode = bd.Steet_Code
-   AND v.zipcode = bd.Zipcode
+   AND v.zip = bd.Zipcode
    AND v.apartment = bd.Apartment
    AND v.story = bd.Story
    AND v.block = bd.Block

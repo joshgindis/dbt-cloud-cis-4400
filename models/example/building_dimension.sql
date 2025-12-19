@@ -9,7 +9,7 @@ WITH building_columns AS (
         highhousenumber AS High_House_Number,
         streetname AS Street_Name,
         streetcode AS Street_Code,
-        zipcode AS Zipcode,
+        zip AS Zipcode,
         apartment AS Apartment,
         story AS Story,
         block AS Block,

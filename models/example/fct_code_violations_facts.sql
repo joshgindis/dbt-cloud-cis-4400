@@ -57,7 +57,6 @@ INNER JOIN location_dimension ld
     AND v.streetname = ld.Street_Name,
     AND v.apartment = ld.Apartment,
     AND v.cross_street_2 = ld.Cross_Street_2,
-    AND v.communityboard = ld.Community_Board,
     AND v.councildistrict = ld.Council_District,
     AND v.censustract = ld.Census_Tract
 

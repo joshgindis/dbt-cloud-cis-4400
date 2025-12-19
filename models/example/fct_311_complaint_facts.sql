@@ -47,7 +47,7 @@ INNER JOIN complaint_type_dimension ctd
 
 INNER JOIN location_dimension ld
     ON ac.borough = ld.Borough
-   AND ac.zip = ld.Incident_Zip
+   AND ac.incident_zip = ld.Incident_Zip
    AND ac.streetname = ld.Street_Name
    AND ac.communityboard = ld.Community_Board
    AND ac.councildistrict = ld.Council_District

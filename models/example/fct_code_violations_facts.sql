@@ -62,13 +62,13 @@ INNER JOIN location_dimension ld
     AND v.censustract = ld.Census_Tract
 
 INNER JOIN status_dimension sd
-   AND v.currentstatus = sd.Current_Status
+   ON v.currentstatus = sd.Current_Status
    AND v.currentstatusdate = sd.Current_Status_Date
 
 INNER JOIN nov_dimension nd
     ON v.novtype = nd.Notice_of_Violation_Type
-   AND v.novdescrption = nd.Notice_of_Violation_Description
-   AND v.novissuedate = nd.Notice_of_Violation_Issue_Date
+   AND v.novdescription = nd.Notice_of_Violation_Description
+   AND v.novissueddate = nd.Notice_of_Violation_Issue_Date
         
 INNER JOIN date_dimension dd
-    ON DATE(v.inspection_date) = dd.Full_Date
+    ON DATE(v.inspectiondate) = dd.Full_Date
